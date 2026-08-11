@@ -1,0 +1,22 @@
+[project]
+name = "mrf-pipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "srinivaspotla-git", email = "srinivas.potla06@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "httpx>=0.28.1",
+    "polars>=1.43.2",
+    "pydantic>=2.13.4",
+]
+
+[project.scripts]
+mrf-pipeline = "mrf_pipeline:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
